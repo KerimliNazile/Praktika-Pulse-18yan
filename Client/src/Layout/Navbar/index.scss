@@ -3,13 +3,19 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 50px;
-background-color: brown;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+z-index: 8;
     .Pulse {
+        color: white;
         font-size: 30px;
     }
 
     .NavbarMain {
         #navbarUl {
+            color: white;
             font-size: 20px;
             display: flex;
             align-items: center;
@@ -20,41 +26,49 @@ background-color: brown;
     }
 
     .Reservation {
+        color: white;
         font-size: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    #mobile{
+
+    #mobile {
         display: none;
+        .burger{
+            font-size: 22px;
+            color: white;
+        }
     }
 }
-@media only screen and (max-width: 926px){
+
+@media only screen and (max-width: 986px) {
     nav {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 50px;
-    background-color: brown;
+
         .Pulse {
             font-size: 30px;
         }
-    
+
         .NavbarMain {
             #navbarUl {
-                
+
                 font-size: 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 30px;
-                li{
+
+                li {
                     display: none;
                 }
-    
+
             }
         }
-    
+
         .Reservation {
             display: none;
             font-size: 20px;
@@ -62,11 +76,13 @@ background-color: brown;
             // align-items: center;
             // justify-content: center;
         }
-        #mobile{
+
+        #mobile {
             display: block;
-.burger{
-    font-size: 30px;
-}
+
+            .burger {
+                font-size: 30px;
+            }
         }
     }
 }

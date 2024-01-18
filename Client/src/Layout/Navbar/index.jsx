@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { IoIosCall } from "react-icons/io";
 import { NavLink } from 'react-router-dom'
 import { IoClose } from "react-icons/io5";
+import { FaHeart } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import './index.scss'
 function Navbar() {
@@ -17,11 +18,12 @@ function Navbar() {
                 </div>
                 <div className="NavbarMain">
                     <ul id='navbarUl'>
-                        <li><NavLink to={"/home"}>Home</NavLink></li>
+                        <li><NavLink to={"/"}>Home</NavLink></li>
                         <li>About Us</li>
                         <li>Restaurant</li>
                         <li>News</li>
                         <li>Contact</li>
+                        <li><NavLink to={"/wishlist"}><FaHeart /></NavLink></li>
                     </ul>
                 </div>
                 <div className="Reservation">
@@ -29,20 +31,20 @@ function Navbar() {
                     <IoIosCall />
                     <span> 652-345 3222 11</span>
                 </div>
-                <div id='mobile'>
+                <div id='mobile' onClick={handleClick}>
                     {
-                        isOpen ? <IoClose /> : <GiHamburgerMenu className='burger'/>
+                        isOpen ? <IoClose className='burger' /> : <GiHamburgerMenu className='burger' />
                     }
                 </div>
             </nav>
             <div className={`${setIsOpen ? 'navlist_active' : 'navlist_close'}navlist `}>
-                <ul>
+                {/* <ul>
                     <li><NavLink to={"/home"}>Home</NavLink></li>
                     <li>About Us</li>
                     <li>Restaurant</li>
                     <li>News</li>
                     <li>Contact</li>
-                </ul>
+                </ul> */}
             </div>
         </>
     )

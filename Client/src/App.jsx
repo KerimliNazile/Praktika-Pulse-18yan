@@ -14,10 +14,10 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Main />}>
-          <Route path='/home ' element={<Home />}></Route>
-          <Route path='/add ' element={<AddPage />}></Route>
-          <Route path='/:id ' element={<Detail />}></Route>
-          <Route path='/wishlist ' element={<Wishlist />}></Route>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/add' element={<AddPage />}></Route>
+          <Route path='/:id' element={<Detail />}></Route>
+          <Route path='/wishlist' element={<Wishlist />}></Route>
         </Route>
       </Routes>
     </>

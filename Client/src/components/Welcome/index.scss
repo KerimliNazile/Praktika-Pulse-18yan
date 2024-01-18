@@ -1,0 +1,81 @@
+#Welcome {
+    min-height: 80vh;
+
+    .WelcomeArea {
+        margin-top: 100px;
+
+        .WlText {
+            h1 {
+                font-size: 50px;
+            }
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .AreaBox {
+
+            margin-top: 200px;
+            gap: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .Boxx {
+                h1 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+
+                text-align: center;
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    #Welcome {
+        min-height: 80vh;
+
+        .WelcomeArea {
+            margin-top: 50px;
+
+            .WlText {
+                h1 {
+                    font-size: 50px;
+                }
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .AreaBox {
+                flex-direction: column;
+                margin-top: 100px;
+                gap: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .Boxx {
+                    h1 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+
+                    text-align: center;
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
